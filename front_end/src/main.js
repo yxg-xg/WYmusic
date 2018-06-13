@@ -3,9 +3,10 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-
+require('./assets/js/flexible_css.debug.js')
+require('./assets/js/flexible.debug.js')
 Vue.config.productionTip = false
-
+Vue.prototype.$axios = axios
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
