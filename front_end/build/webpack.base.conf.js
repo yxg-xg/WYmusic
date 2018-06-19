@@ -68,6 +68,14 @@ module.exports = {
         }
       },
       {
+        test: /\.css$/,
+        include: [
+          /src/,//表示在src目录下的css需要编译
+          '/node_modules/element-ui/lib/'   //增加此项
+        ],
+        loader: 'style-loader!css-loader'
+      },
+      {
         test: /\.(woff2?|eot|ttf|otf)(\?.*)?$/,
         loader: 'url-loader',
         options: {
