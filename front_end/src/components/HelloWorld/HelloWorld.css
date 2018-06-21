@@ -90,4 +90,48 @@ li{
   border-left:.05rem solid red ;
   padding-left: .2rem;
 }
+.tabConListMain{
+  position: relative;
+  padding-bottom: .5rem;
+}
+.tabCon_ul{
+  padding-bottom: .2rem;
+}
+
+.tabCon_li{
+  display: block;
+  float: left;
+  width: 33.3%;
+  padding-left: 1px;
+  padding-right: 1px;
+  box-sizing: border-box;
+}
+.tabCon_li:first-child{
+  padding-left: 0;
+  padding-right: 2px;
+}
+.tabCon_li:last-child{
+  padding-left: 2px;
+  padding-right: 0;
+}
+.tabConImg{
+  position: relative;
+  padding-bottom: 100%;
+}
+.tabConImg>img{
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+.tabConTxt{
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  padding: 6px 2px 0 6px;
+  line-height: 1.2;
+  font-size: .38rem;
+}
 

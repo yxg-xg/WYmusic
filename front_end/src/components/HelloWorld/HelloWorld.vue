@@ -15,6 +15,18 @@
     <div class="tabCon">
       <div class="tabConList" v-show="tabConListShow===0">
         <h2 class="tabConListTitle">推荐歌单</h2>
+        <div class="tabConListMain">
+          <div class="tabCon_ul">
+            <a href="" class="tabCon_li">
+              <div class="tabConImg">
+                <img src="../../assets/img/logo.png" alt=""/>
+              </div>
+              <p class="tabConTxt">
+                华语速报新歌
+              </p>
+            </a>
+          </div>
+        </div>
       </div>
       <div class="tabConList" v-show="tabConListShow===1">2</div>
       <div class="tabConList" v-show="tabConListShow===2">3</div>
@@ -35,7 +47,8 @@
         {tabtxt:'搜索'},
       ],
       isActive:0,
-      tabConListShow:0
+      tabConListShow:0,
+
     }
   },
   methods:{
