@@ -20,6 +20,9 @@ li{
   overflow: hidden;
   content: ".";
 }
+a:hover{
+  text-decoration: none;
+}
 .hello{
   padding-top: 1.8rem;
 }
@@ -148,8 +151,8 @@ li{
   padding-left: .2rem;
 }
 .musicLi{
-  border-bottom: 1px solid rgba(0,0,0,.1);
-  padding: 2px 0;
+  border-bottom: 0.5px solid rgba(0,0,0,.1);
+  padding: 10px 0 5px 0;
   display: flex;
 }
 .musicName{
@@ -157,7 +160,7 @@ li{
   text-align: left;
 }
 .musicName p:first-child{
-  font-size: .5rem;
+  font-size: .48rem;
   color: #333;
   line-height: 1.5;
 }

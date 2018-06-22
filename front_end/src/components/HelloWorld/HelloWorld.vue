@@ -39,24 +39,26 @@
             </a>
           </div>
         </div>
+        <div class="musicList">
+          <h2 class="tabConListTitle">推荐歌单</h2>
+          <div class="musicUl">
+            <a href="" class="musicLi clearfix">
+              <div class="musicName">
+                <p>ALL THE WAYS</p>
+                <p>Meghan Trainor</p>
+              </div>
+              <div class="musicStarImg">
+                <span class="StarIcon indexIcon"></span>
+              </div>
+            </a>
+
+          </div>
+        </div>
       </div>
       <div class="tabConList" v-show="tabConListShow===1">2</div>
       <div class="tabConList" v-show="tabConListShow===2">3</div>
     </div>
-    <div class="musicList">
-      <h2 class="tabConListTitle">推荐歌单</h2>
-      <div class="musicUl">
-        <a href="" class="musicLi clearfix">
-          <div class="musicName">
-            <p>ALL THE WAYS</p>
-            <p>Meghan Trainor</p>
-          </div>
-          <div class="musicStarImg">
-            <span class="StarIcon indexIcon"></span>
-          </div>
-        </a>
-      </div>
-    </div>
+
   </div>
 
 </template>
