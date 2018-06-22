@@ -21,12 +21,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="HelloWorld.vue" pinned="false" current-in-tab="false">
+      <file leaf-file-name="HelloWorld.vue" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/front_end/src/components/HelloWorld/HelloWorld.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.2096775">
-              <caret line="21" column="51" selection-start-line="21" selection-start-column="51" selection-end-line="21" selection-end-column="51" />
-              <folding />
+            <state vertical-scroll-proportion="0.6359223">
+              <caret line="54" column="45" selection-start-line="54" selection-start-column="45" selection-end-line="54" selection-end-column="45" />
+              <folding>
+                <element signature="n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -35,17 +37,17 @@
         <entry file="file://$PROJECT_DIR$/front_end/build/webpack.base.conf.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-2.0714285">
-              <caret line="54" column="40" selection-start-line="54" selection-start-column="40" selection-end-line="54" selection-end-column="40" />
+              <caret line="54" column="35" selection-start-line="54" selection-start-column="35" selection-end-line="54" selection-end-column="35" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HelloWorld.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="HelloWorld.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/front_end/src/components/HelloWorld/HelloWorld.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.88789237">
-              <caret line="134" column="16" selection-start-line="134" selection-start-column="16" selection-end-line="134" selection-end-column="16" />
+            <state vertical-scroll-proportion="-5.448276">
+              <caret line="182" column="32" selection-start-line="182" selection-start-column="32" selection-end-line="182" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -76,8 +78,8 @@
         <option value="$PROJECT_DIR$/front_end/index.html" />
         <option value="$PROJECT_DIR$/front_end/src/main.js" />
         <option value="$PROJECT_DIR$/front_end/build/webpack.base.conf.js" />
-        <option value="$PROJECT_DIR$/front_end/src/components/HelloWorld/HelloWorld.vue" />
         <option value="$PROJECT_DIR$/front_end/src/components/HelloWorld/HelloWorld.css" />
+        <option value="$PROJECT_DIR$/front_end/src/components/HelloWorld/HelloWorld.vue" />
       </list>
     </option>
   </component>
@@ -89,8 +91,8 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="514" />
-    <option name="y" value="109" />
+    <option name="x" value="446" />
+    <option name="y" value="84" />
     <option name="width" value="1621" />
     <option name="height" value="894" />
   </component>
@@ -156,6 +158,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wyMusic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wyMusic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="front_end" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="img" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -318,11 +342,13 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\wyMusic\front_end\static\img" />
       <recent name="F:\wyMusic\front_end\src\assets" />
       <recent name="F:\wyMusic\front_end\src\assets\js" />
       <recent name="F:\wyMusic\front_end\src\assets\css" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\wyMusic\front_end\static\img" />
       <recent name="F:\wyMusic\front_end\src\assets\img" />
     </key>
   </component>
@@ -389,7 +415,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="514" y="109" width="1621" height="894" extended-state="0" />
+    <frame x="446" y="84" width="1621" height="894" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24952622" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -553,24 +579,26 @@
     <entry file="file://$PROJECT_DIR$/front_end/build/webpack.base.conf.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.0714285">
-          <caret line="54" column="40" selection-start-line="54" selection-start-column="40" selection-end-line="54" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/front_end/src/components/HelloWorld/HelloWorld.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.2096775">
-          <caret line="21" column="51" selection-start-line="21" selection-start-column="51" selection-end-line="21" selection-end-column="51" />
+          <caret line="54" column="35" selection-start-line="54" selection-start-column="35" selection-end-line="54" selection-end-column="35" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/front_end/src/components/HelloWorld/HelloWorld.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.88789237">
-          <caret line="134" column="16" selection-start-line="134" selection-start-column="16" selection-end-line="134" selection-end-column="16" />
+        <state vertical-scroll-proportion="-5.448276">
+          <caret line="182" column="32" selection-start-line="182" selection-start-column="32" selection-end-line="182" selection-end-column="32" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front_end/src/components/HelloWorld/HelloWorld.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6359223">
+          <caret line="54" column="45" selection-start-line="54" selection-start-column="45" selection-end-line="54" selection-end-column="45" />
+          <folding>
+            <element signature="n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

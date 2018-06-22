@@ -12,6 +12,14 @@ h2{
 li{
   list-style: none;
 }
+.clearfix:after{
+  display: block;
+  visibility: hidden;
+  clear: both;
+  height: 0;
+  overflow: hidden;
+  content: ".";
+}
 .hello{
   padding-top: 1.8rem;
 }
@@ -89,6 +97,7 @@ li{
   text-align: left;
   border-left:.05rem solid red ;
   padding-left: .2rem;
+  margin-bottom: .5rem;
 }
 .tabConListMain{
   position: relative;
@@ -133,5 +142,43 @@ li{
   padding: 6px 2px 0 6px;
   line-height: 1.2;
   font-size: .38rem;
+  color: #000;
 }
-
+.musicUl{
+  padding-left: .2rem;
+}
+.musicLi{
+  border-bottom: 1px solid rgba(0,0,0,.1);
+  padding: 2px 0;
+  display: flex;
+}
+.musicName{
+  flex:1 1 auto;
+  text-align: left;
+}
+.musicName p:first-child{
+  font-size: .5rem;
+  color: #333;
+  line-height: 1.5;
+}
+.musicName p:last-child{
+  font-size: .2rem;
+  color: #888;
+  line-height: 1.5;
+}
+.musicStarImg{
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  padding: 0 10px;
+}
+.indexIcon{
+  background: url("../../../static/img/index_icon_2x.png") no-repeat;
+  background-size: 5rem 3rem;
+}
+.StarIcon{
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  background-position: -.6rem .1rem;
+}
