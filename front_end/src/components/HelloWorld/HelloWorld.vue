@@ -55,7 +55,29 @@
           </div>
         </div>
       </div>
-      <div class="tabConList" v-show="tabConListShow===1">2</div>
+      <div class="tabConList" v-show="tabConListShow===1">
+        <div class="tabHot clearfix">
+          <div class="tabHotTitleCon">
+            <div class="tabHotTitle indexIcon"></div>
+          </div>
+        </div>
+        <div class="rankingList">
+          <a href="" class="rankingListSong">
+            <div class="rankingListNum">
+              01
+            </div>
+            <div class="rankingListCon">
+              <div class="rankingListName">
+                <p>That Girl</p>
+                <p>Olly Murs</p>
+              </div>
+              <div class="rankingListStar">
+                <div class="StarIcon indexIcon"></div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
       <div class="tabConList" v-show="tabConListShow===2">3</div>
     </div>
 
