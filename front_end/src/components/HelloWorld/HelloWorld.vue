@@ -40,12 +40,12 @@
           </div>
         </div>
         <div class="musicList">
-          <h2 class="tabConListTitle">推荐歌单</h2>
+          <h2 class="tabConListTitle">最新音乐</h2>
           <div class="musicUl">
-            <a href="" class="musicLi clearfix">
+            <a href="" class="musicLi clearfix" v-for="(musicLi,index) in musicLis">
               <div class="musicName">
-                <p>ALL THE WAYS</p>
-                <p>Meghan Trainor</p>
+                <p>{{musicLi.mName}}</p>
+                <p>{{musicLi.mSinger}}</p>
               </div>
               <div class="musicStarImg">
                 <span class="StarIcon indexIcon"></span>
@@ -86,6 +86,7 @@
 </template>
 
 <script>
+  //import webpSrc from '../assets/img/logo.png'
   export default {
     name: 'HelloWorld',
     data () {
@@ -97,16 +98,18 @@
         {tabtxt:'搜索'},
       ],
       tabConLis:[
-        {tabConImgSrc:'/static/img/wy1.webp',tabConTxt:'华语速报新歌'},
-        {tabConImgSrc:'/static/img/wy2.webp',tabConTxt:'华语速报新歌'},
-        {tabConImgSrc:'/static/img/wy3.webp',tabConTxt:'华语速报新歌'},
-        {tabConImgSrc:'/static/img/wy4.webp',tabConTxt:'华语速报新歌'},
-        {tabConImgSrc:'/static/img/wy5.webp',tabConTxt:'华语速报新歌'},
-        {tabConImgSrc:'/static/img/wy6.webp',tabConTxt:'华语速报新歌'},
+        {tabConImgSrc: require('@/assets/img/wy1.webp'),tabConTxt:'华语速报新歌'},
+        {tabConImgSrc:require('@/assets/img/wy2.webp'),tabConTxt:'华语速报新歌'},
+        {tabConImgSrc:require('@/assets/img/wy3.webp'),tabConTxt:'华语速报新歌'},
+        {tabConImgSrc:require('@/assets/img/wy4.webp'),tabConTxt:'华语速报新歌'},
+        {tabConImgSrc:require('@/assets/img/wy5.webp'),tabConTxt:'华语速报新歌'},
+        {tabConImgSrc:require('@/assets/img/wy6.webp'),tabConTxt:'华语速报新歌'},
       ],
       isActive:0,
       tabConListShow:0,
-
+      musicLis:[
+        {mName:'ALL THE WAYS',mSinger:'Meghan Trainor'}
+      ]
     }
   },
   methods:{
