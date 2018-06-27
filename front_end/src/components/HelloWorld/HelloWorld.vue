@@ -44,8 +44,8 @@
           <div class="musicUl">
             <a href="" class="musicLi clearfix" v-for="(musicLi,index) in musicLis">
               <div class="musicName">
-                <p>{{musicLi.mName}}</p>
-                <p>{{musicLi.mSinger}}</p>
+                <p>{{musicLi.musicLis}}</p>
+                <p>{{musicLi.musicLis}}</p>
               </div>
               <div class="musicStarImg">
                 <span class="StarIcon indexIcon"></span>
@@ -90,35 +90,43 @@
   export default {
     name: 'HelloWorld',
     data () {
-    return {
-      msg: 'Welcome to Your Vue.js App',
-      tabtitles:[
-        {tabtxt:'推荐音乐'},
-        {tabtxt:'热歌榜'},
-        {tabtxt:'搜索'},
-      ],
-      tabConLis:[
-        {tabConImgSrc: require('@/assets/img/wy1.webp'),tabConTxt:'华语速报新歌'},
-        {tabConImgSrc:require('@/assets/img/wy2.webp'),tabConTxt:'华语速报新歌'},
-        {tabConImgSrc:require('@/assets/img/wy3.webp'),tabConTxt:'华语速报新歌'},
-        {tabConImgSrc:require('@/assets/img/wy4.webp'),tabConTxt:'华语速报新歌'},
-        {tabConImgSrc:require('@/assets/img/wy5.webp'),tabConTxt:'华语速报新歌'},
-        {tabConImgSrc:require('@/assets/img/wy6.webp'),tabConTxt:'华语速报新歌'},
-      ],
-      isActive:0,
-      tabConListShow:0,
-      musicLis:[
-        {mName:'ALL THE WAYS',mSinger:'Meghan Trainor'}
-      ]
+      return {
+        msg: 'Welcome to Your Vue.js App',
+        tabtitles:[
+          {tabtxt:'推荐音乐'},
+          {tabtxt:'热歌榜'},
+          {tabtxt:'搜索'},
+        ],
+        tabConLis:[
+          {tabConImgSrc: require('@/assets/img/wy1.webp'),tabConTxt:'华语速报新歌'},
+          {tabConImgSrc:require('@/assets/img/wy2.webp'),tabConTxt:'华语速报新歌'},
+          {tabConImgSrc:require('@/assets/img/wy3.webp'),tabConTxt:'华语速报新歌'},
+          {tabConImgSrc:require('@/assets/img/wy4.webp'),tabConTxt:'华语速报新歌'},
+          {tabConImgSrc:require('@/assets/img/wy5.webp'),tabConTxt:'华语速报新歌'},
+          {tabConImgSrc:require('@/assets/img/wy6.webp'),tabConTxt:'华语速报新歌'},
+        ],
+        isActive:0,
+        tabConListShow:0,
+        musicLis:[]
+      }
+    },
+    methods:{
+      tabClick(index){
+        this.isActive = index;
+        this.tabConListShow = index
+        //console.log(index)
+      }
+    },
+    created:function(){
+      let that = this;
+     this.$axios({
+       method:'post',
+       url:'/',
+     }).then((res)=>{
+        console.log(res.data)
+        that.musicLis = res.data
+      })
     }
-  },
-  methods:{
-    tabClick(index){
-      this.isActive = index;
-      this.tabConListShow = index
-      //console.log(index)
-    }
-  }
   }
 </script>
 
