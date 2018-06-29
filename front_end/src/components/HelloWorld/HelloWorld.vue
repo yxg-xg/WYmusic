@@ -44,8 +44,8 @@
           <div class="musicUl">
             <a href="" class="musicLi clearfix" v-for="(musicLi,index) in musicLis">
               <div class="musicName">
-                <p>{{musicLi.musicLis}}</p>
-                <p>{{musicLi.musicLis}}</p>
+                <p>{{musicLi.music_name}}</p>
+                <p>{{musicLi.music_writer}}</p>
               </div>
               <div class="musicStarImg">
                 <span class="StarIcon indexIcon"></span>
@@ -107,7 +107,7 @@
         ],
         isActive:0,
         tabConListShow:0,
-        musicLis:[]
+        musicLis:''
       }
     },
     methods:{
@@ -115,17 +115,22 @@
         this.isActive = index;
         this.tabConListShow = index
         //console.log(index)
-      }
+      },
+
     },
     created:function(){
-      let that = this;
-     this.$axios({
-       method:'post',
-       url:'/',
-     }).then((res)=>{
+
+      this.$axios({
+        method:'post',
+        url:'/',
+      }).then((res)=>{
         console.log(res.data)
-        that.musicLis = res.data
+        this.musicLis = res.data
       })
+      //console.log(this)
+    },
+    mounted:function(){
+
     }
   }
 </script>
