@@ -82,8 +82,20 @@ a:hover{
 }
 .u-tab .z-selected .tabtxt{
   color: #d33a31;
+  &:after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    z-index: 3;
+    width: 100%;
+    height: 4px;
+    -webkit-transform: scaleY(.5);
+    transform: scaleY(.5);
+    background: #d33a31;
+  }
 }
-.u-tab .z-selected .tabtxt:after{
+/*.u-tab .z-selected .tabtxt:after{
   content: "";
   position: absolute;
   left: 0;
@@ -94,7 +106,7 @@ a:hover{
   -webkit-transform: scaleY(.5);
   transform: scaleY(.5);
   background: #d33a31;
-}
+}*/
 .tabCon{
 
 }
@@ -120,26 +132,41 @@ a:hover{
   padding-left: 1px;
   padding-right: 1px;
   box-sizing: border-box;
+  &:first-child{
+    padding-left: 0;
+    padding-right: 2px;
+  }
+  &:last-child{
+    padding-left: 2px;
+    padding-right: 0;
+  }
 }
-.tabCon_li:first-child{
+/*.tabCon_li:first-child{
   padding-left: 0;
   padding-right: 2px;
 }
 .tabCon_li:last-child{
   padding-left: 2px;
   padding-right: 0;
-}
+}*/
 .tabConImg{
   position: relative;
   padding-bottom: 100%;
+  &>img{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 1;
+  }
 }
-.tabConImg>img{
+/*.tabConImg>img{
   position: absolute;
   width: 100%;
   left: 0;
   top: 0;
   z-index: 1;
-}
+}*/
 .tabConTxt{
   display: -webkit-box;
   -webkit-line-clamp: 2;
@@ -161,8 +188,18 @@ a:hover{
 .musicName{
   flex:1 1 auto;
   text-align: left;
+  & p:first-child{
+    font-size: .4rem;
+    color: #333;
+    line-height: 1.5;
+  }
+  & p:last-child{
+    font-size: .2rem;
+    color: #888;
+    line-height: 1.5;
+  }
 }
-.musicName p:first-child{
+/*.musicName p:first-child{
   font-size: .4rem;
   color: #333;
   line-height: 1.5;
@@ -171,7 +208,7 @@ a:hover{
   font-size: .2rem;
   color: #888;
   line-height: 1.5;
-}
+}*/
 .musicStarImg{
   display: flex;
   -webkit-box-align: center;
@@ -240,8 +277,18 @@ a:hover{
   -webkit-flex: 1 1 auto;
   flex: 1 1 auto;
   text-align: left;
+  & p:first-child{
+    font-size: .4rem;
+    color: #333;
+    line-height: 1.5;
+  }
+  & p:last-child{
+    font-size: .2rem;
+    color: #888;
+    line-height: 1.5;
+  }
 }
-.rankingListName p:first-child{
+/*.rankingListName p:first-child{
   font-size: .4rem;
   color: #333;
   line-height: 1.5;
@@ -250,7 +297,7 @@ a:hover{
   font-size: .2rem;
   color: #888;
   line-height: 1.5;
-}
+}*/
 .rankingListStar{
   display: -webkit-box;
   display: -webkit-flex;

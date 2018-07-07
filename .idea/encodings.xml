@@ -5,7 +5,10 @@
     <file url="file://$PROJECT_DIR$/front_end/config/index.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/front_end/src/App.vue" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/front_end/src/components/HelloWorld/HelloWorld.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/front_end/src/components/HelloWorld/HelloWorld.less" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/front_end/src/components/HelloWorld/HelloWorld.vue" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/front_end/src/components/song/song.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/front_end/src/components/song/song.vue" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/front_end/src/main.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/front_end/src/router/index.js" charset="UTF-8" />
   </component>

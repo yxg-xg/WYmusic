@@ -22,7 +22,7 @@ module .exports ={
                     console.log(err)
                 }
                 if(result){
-                    console.log(result)
+
                     jsonWrite(res,result)
                 }
             })

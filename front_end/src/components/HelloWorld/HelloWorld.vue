@@ -42,7 +42,7 @@
         <div class="musicList">
           <h2 class="tabConListTitle">最新音乐</h2>
           <div class="musicUl">
-            <a href="" class="musicLi clearfix" v-for="(musicLi,index) in musicLis">
+            <a href="/#/song" class="musicLi clearfix" v-for="(musicLi,index) in musicLis">
               <div class="musicName">
                 <p>{{musicLi.music_name}}</p>
                 <p>{{musicLi.music_writer}}</p>
@@ -91,7 +91,6 @@
     name: 'HelloWorld',
     data () {
       return {
-        msg: 'Welcome to Your Vue.js App',
         tabtitles:[
           {tabtxt:'推荐音乐'},
           {tabtxt:'热歌榜'},
@@ -114,20 +113,19 @@
       tabClick(index){
         this.isActive = index;
         this.tabConListShow = index
-        //console.log(index)
+
       },
 
     },
     created:function(){
-
+      //获取歌名
       this.$axios({
         method:'post',
         url:'/',
       }).then((res)=>{
-        console.log(res.data)
         this.musicLis = res.data
       })
-      //console.log(this)
+
     },
     mounted:function(){
 
@@ -135,6 +133,6 @@
   }
 </script>
 
-<style lang="css" scoped>
-  @import "HelloWorld.css"
+<style scoped lang="less">
+  @import "HelloWorld.less"
 </style>
