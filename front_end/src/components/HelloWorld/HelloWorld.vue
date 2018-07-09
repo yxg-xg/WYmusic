@@ -133,6 +133,6 @@
   }
 </script>
 
-<style scoped lang="less">
-  @import "HelloWorld.less"
+<style scoped lang="less" src="./HelloWorld.less">
+  //@import "./HelloWorld.less"
 </style>
