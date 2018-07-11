@@ -54,14 +54,90 @@ a:hover{
   left: 0;
   width: 100%;
   height: 100%;
+  .wyLogo{
+    width: 2.6rem;
+    height: .45rem;
+    position: absolute;
+    top: .3rem;
+    left:.3rem;
+    background: url("../../assets/img/song/logo_3x.png") no-repeat;
+    background-size: auto 100%;
+  }
 
+  .opticalDiskWrap{
+    padding-top: 2.5rem;
+    .a-circling{
+      animation: circling 20s infinite linear;
+    }
+    .opticalDisk{
+      position: relative;
+      width: 7.4rem;
+      height: 7.4rem;
+      margin: 0 auto;
+      border-radius: 50em;
+      box-shadow: 0px 0px 0px 10px rgba(255,255,255,.1);
+      background: url("../../assets/img/song/disc_default.png") no-repeat 50% 50%;
+      background-size: contain;
+      .songImg{
+        overflow: hidden;
+        border-radius: 50em;
+        width: 5rem;
+        height: 5rem;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin: -2.5rem 0 0 -2.5rem;
+        @keyframes circling{
+          from {transform: rotate(0deg);}
+          to {transform: rotate(360deg);}
+        }
+        img{
+          width: 100%;
+          height: 100%;
+          box-shadow: 0px 0px 1px 5px rgba(0,0,0,1);
+        }
+      }
+      .song-light{
+        width: 7.4rem;
+        height: 7.4rem;
+        border-radius: 50em;
+        background: url("../../assets/img/song/disc_light.png") no-repeat 50% 50%;
+        background-size: 109.5% 105%;
+        @keyframes circling{
+          from {transform: rotate(0deg);}
+          to {transform: rotate(360deg);}
+        }
+      }
+      .m-start{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 1.6rem;
+        height: 1.6rem;
+        margin: -0.8rem 0 0 -.8rem;
+        background: url("../../assets/img/song/down.png") no-repeat 50% 50%;
+        background-size: contain;
+      }
+    }
+
+
+    .m-song-clickarea{
+      position: absolute;
+      width: 100%;
+      top: 0;
+      left: 0;
+      bottom: 12px;
+      z-index: 10;
+    }
+  }
+  .broadcaster{
+    position: absolute;
+    top: 0;
+    left: 4rem;
+    width: 3rem;
+    height: 4rem;
+    background: url("../../assets/img/song/needle-plus.png") no-repeat;
+    background-size: contain;
+  }
 }
-.wyLogo{
-  width: 2.5rem;
-  height: .4rem;
-  position: absolute;
-  top: .3rem;
-  left:.3rem;
-  background: url("../../assets/img/song/logo_3x.png") no-repeat;
-  background-size: auto 100%;
-}
+
