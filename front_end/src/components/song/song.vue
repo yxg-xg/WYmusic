@@ -49,20 +49,21 @@
     },
     methods:{
       clickarea(){
-        let matrix = "";
-        this.startShow = !this.startShow;
-        this.isCircling = !this.isCircling;
+        let matrixArrBefor = "";
+        let matrixArrLength = this.matrixArr.length;
         var song = this.$refs.song;
         var songtr = window.getComputedStyle(song,null);
         var tr = songtr.getPropertyValue("transform");
-        if(tr != "none"){
-          this.matrixArr = tr
-          //matrix=tr
-          this.deg =matrix ;
-        }else return
+        this.startShow = !this.startShow;
+        this.isCircling = !this.isCircling;
 
+        if(tr != "none"){
+          this.matrixArr.push(tr)
+        }else return
+        matrixArrBefor = this.matrixArr[matrixArrLength]
+        this.deg=matrixArrBefor
+        console.log(matrixArrLength)
         console.log(this.matrixArr)
-        console.log(tr)
 
       }
     },
