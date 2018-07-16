@@ -78,36 +78,41 @@ a:hover{
       box-shadow: 0px 0px 0px 10px rgba(255,255,255,.1);
       background: url("../../assets/img/song/disc_default.png") no-repeat 50% 50%;
       background-size: contain;
-      .songImg{
-        overflow: hidden;
-        border-radius: 50em;
-        width: 5rem;
-        height: 5rem;
+      .songImgWrap{
         position: absolute;
         top: 50%;
         left: 50%;
         margin: -2.5rem 0 0 -2.5rem;
-        @keyframes circling{
-          from {transform: rotate(0deg);}
-          to {transform: rotate(360deg);}
-        }
-        img{
-          width: 100%;
-          height: 100%;
-          box-shadow: 0px 0px 1px 5px rgba(0,0,0,1);
-        }
-      }
-      .song-light{
-        width: 7.4rem;
-        height: 7.4rem;
-        border-radius: 50em;
-        background: url("../../assets/img/song/disc_light.png") no-repeat 50% 50%;
-        background-size: 109.5% 105%;
-        @keyframes circling{
-          from {transform: rotate(0deg);}
-          to {transform: rotate(360deg);}
+        .songImg{
+          overflow: hidden;
+          border-radius: 50em;
+          width: 5rem;
+          height: 5rem;
+          @keyframes circling{
+            from {transform: rotate(0deg);}
+            to {transform: rotate(1turn);}
+          }
+          img{
+            width: 100%;
+            height: 100%;
+            box-shadow: 0px 0px 1px 5px rgba(0,0,0,1);
+          }
         }
       }
+      .song-light-wrap{
+        .song-light{
+          width: 7.4rem;
+          height: 7.4rem;
+          border-radius: 50em;
+          background: url("../../assets/img/song/disc_light.png") no-repeat 50% 50%;
+          background-size: 109.5% 105%;
+          @keyframes circling{
+            from {transform: rotate(0deg);}
+            to {transform: rotate(1turn);}
+          }
+        }
+      }
+
       .m-start{
         position: absolute;
         top: 50%;

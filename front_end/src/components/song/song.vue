@@ -6,15 +6,21 @@
       <div class="wyLogo"></div>
       <div class="opticalDiskWrap">
         <div class="opticalDisk ">
-          <transition name="a-circling">
-            <div class="songImg" :class="{'a-circling':isCircling}">
+            <!--光碟-->
+          <div class="songImgWrap" :style="{transform:deg}">
+            <div class="songImg" ref="song" :class="{'a-circling':isCircling}"  >
               <img :src=songImg alt=""/>
             </div>
-          </transition>
+          </div>
 
-          <transition name="a-circling">
-            <div class="song-light" :class="{'a-circling':isCircling}"></div>
-          </transition>
+
+
+            <!--光碟高亮部分-->
+          <div class="song-light-wrap" :style="{transform:deg}">
+            <div class="song-light" ref="song" :class="{'a-circling':isCircling}" ></div>
+          </div>
+
+
 
 
           <div class="m-start" v-show="startShow">
@@ -36,15 +42,28 @@
       return{
         songImg:require("@/assets/img/songBg/thatGirl.webp"),
         startShow:true,
-        isCircling:true,
-
+        isCircling:false,
+        deg:'',
+        matrixArr:[]
       }
     },
     methods:{
       clickarea(){
+        let matrix = "";
         this.startShow = !this.startShow;
         this.isCircling = !this.isCircling;
-        console.log()
+        var song = this.$refs.song;
+        var songtr = window.getComputedStyle(song,null);
+        var tr = songtr.getPropertyValue("transform");
+        if(tr != "none"){
+          this.matrixArr = tr
+          //matrix=tr
+          this.deg =matrix ;
+        }else return
+
+        console.log(this.matrixArr)
+        console.log(tr)
+
       }
     },
     created:function(){
