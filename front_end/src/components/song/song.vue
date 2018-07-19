@@ -36,6 +36,7 @@
 
 </template>
 <script>
+  var difference_matrix
   export default{
     name: 'song',
     data(){
@@ -44,26 +45,41 @@
         startShow:true,
         isCircling:false,
         deg:'',
-        matrixArr:[]
+        arr_matrix_sub:[],
+        df_matrixs_one:"",
+        df_matrixs_two:0,
+        df_matrixs_three:"",
+        df_matrixs_four:""
       }
     },
     methods:{
       clickarea(){
-        let matrixArrBefor = "";
-        let matrixArrLength = this.matrixArr.length;
         var song = this.$refs.song;
         var songtr = window.getComputedStyle(song,null);
-        var tr = songtr.getPropertyValue("transform");
+        var matrix = songtr.getPropertyValue("transform");
+
         this.startShow = !this.startShow;
         this.isCircling = !this.isCircling;
+        //截取matrix前4个数据
+        let matrix_sub = matrix.substring(7,46);
+        //split() 使用逗号分割字符串成数组
+        this.arr_matrix_sub = matrix_sub.split(",");
+        //1减去matrix的差值(0deg) = matrix(1, 0, 0, 1, 0, 0)
 
-        if(tr != "none"){
-          this.matrixArr.push(tr)
+
+
+
+        if(matrix != "none"){
+          this.df_matrixs_one = this.df_matrixs_one - -(1- this.arr_matrix_sub[0]);
+          this.df_matrixs_two = this.df_matrixs_two +this.arr_matrix_sub[1];
+          //console.log(this.df_matrix_one)
+          this.deg=matrix
+
         }else return
-        matrixArrBefor = this.matrixArr[matrixArrLength]
-        this.deg=matrixArrBefor
-        console.log(matrixArrLength)
-        console.log(this.matrixArr)
+
+
+        console.log(this.df_matrixs_two)
+
 
       }
     },
